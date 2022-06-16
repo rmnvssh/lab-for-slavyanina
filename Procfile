@@ -1,1 +1,1 @@
-web: gunicorn js_example:app
+web: gunicorn slava_the_best:app
