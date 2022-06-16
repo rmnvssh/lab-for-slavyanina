@@ -6,7 +6,7 @@ with io.open('README.rst', 'rt', encoding='utf8') as f:
     readme = f.read()
 
 setup(
-    name='js_example',
+    name='slava_the_best',
     version='1.0.0',
     url='http://flask.pocoo.org/docs/patterns/jquery/',
     license='BSD',
