@@ -1,1 +1,21 @@
+name: Lab
 
+on:
+  push:
+    branches: [ main, .* ]
+  pull_request:
+    branches: [ main, .* ]
+
+  workflow_dispatch:
+
+jobs:
+  SlavaCheckingCodeStyle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: SlavaCheckingCodestyle
+        run: |
+          sudo apt update
+          sudo apt install python3-pip -y
+          pip3 install flake8
+          python3 -m flake8 ./ --ignore=F401,E402
