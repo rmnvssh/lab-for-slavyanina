@@ -53,3 +53,13 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "slavyan" 
           heroku_email: ${{secrets.HEROKU_EMAIL}}
+  SlavaWritingToMe:
+    needs: SlavaDeployingNow
+    runs-on: ubuntu-latest
+    steps:
+      - name: send default message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{secrets.MY_USER_CURRENT_ID
+          token: ${{secrets.TELEGRAM_TOKEN}}
+          message: Слышь, там всё заработало, Слава проверил
