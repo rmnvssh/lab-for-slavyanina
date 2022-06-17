@@ -28,6 +28,7 @@ jobs:
           sudo apt install python3-pip -y
           pip3 install flake8
           python3 -m flake8 ./ --ignore=F401,E402
+          
   SlavaWritingToMeAboutCodeStyle:
     needs: SlavaCheckingCodeStyle
     runs-on: ubuntu-latest
