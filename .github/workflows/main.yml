@@ -101,4 +101,4 @@ jobs:
         with:
           to: ${{secrets.MY_USER_CURRENT_ID}}
           token: ${{secrets.TELEGRAM_TOKEN}}
-          message: Слышь, там всё заработало, Слава проверил, на ссылку https://dashboard.heroku.com/apps/slavyan/logs
+          message: Слышь, там всё заработало, Слава проверил, на ссылку https://slavyan.herokuapp.com/
